@@ -392,6 +392,7 @@ func (i *importer) queryImports(filename string) fileImports {
 
 	if anyNonCopyFrom {
 		std["context"] = struct{}{}
+		std["time"] = struct{}{}
 	}
 
 	sqlpkg := parseDriver(i.Options.SqlPackage)
